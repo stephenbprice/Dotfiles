@@ -58,9 +58,10 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype htmldjango setlocal ts=2 sw=2 expandtab
 autocmd Filetype typescript setlocal ts=2 sw=2 expandtab
 
 "Backups
