@@ -6,7 +6,7 @@ set encoding=utf8
 set autochdir
 
 "VIM-PLUG: install with
-"curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"curl -fLo ~/vimfiles/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "VIM-PLUG - install plugins with :PlugInstall
 
 call plug#begin('~/.vim/plugged')
@@ -17,6 +17,10 @@ filetype plugin indent on
 
 "Colors
 syntax on
+set term=xterm
+set t_Co=256
+let &t_AB="\e[48;5;%dm"
+let &t_AF="\e[38;5;%dm"
 set background=dark
 colorscheme spacegray
 
@@ -44,9 +48,9 @@ autocmd Filetype typescript setlocal ts=2 sw=2 expandtab
 
 "Backups
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/_vim-tmp,~/_tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/_vim-tmp,~/_tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 "Misc
