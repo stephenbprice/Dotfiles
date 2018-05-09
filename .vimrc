@@ -12,6 +12,7 @@ set autochdir
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'                              "NERDTree
 Plug 'ajh17/spacegray.vim'                              "Spacegray colorscheme
+Plug 'vim-scripts/PaperColor.vim'                       "PaperColor colorscheme
 call plug#end()
 filetype plugin indent on
 
