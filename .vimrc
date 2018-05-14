@@ -63,6 +63,7 @@ set clipboard=unnamed
 set autoindent          "Autoindent
 set tw=0                "Stop auto line breaks
 set backspace=indent,eol,start
+set tags=tags;/
 
 "Mapings
 nnoremap <C-J> <C-W><C-J> "Split nav
