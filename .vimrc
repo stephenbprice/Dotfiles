@@ -16,6 +16,7 @@ Plug 'vim-scripts/PaperColor.vim'                       "PaperColor colorscheme
 call plug#end()
 filetype plugin indent on
 
+
 "Colors
 syntax on
 set background=dark
@@ -37,6 +38,12 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+
+
+"Custom filetypes
+au BufNewFile,BufRead *.vue set filetype=javascript
+
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
