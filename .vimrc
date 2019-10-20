@@ -12,7 +12,6 @@ set autochdir
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'                              "NERDTree
 Plug 'ajh17/spacegray.vim'                              "Spacegray colorscheme
-Plug 'vim-scripts/PaperColor.vim'                       "PaperColor colorscheme
 call plug#end()
 filetype plugin indent on
 
@@ -43,6 +42,7 @@ set expandtab
 
 "Custom filetypes
 au BufNewFile,BufRead *.vue set filetype=javascript
+au BufRead,BufNewFile *.ts set filetype=typescript
 
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
@@ -80,5 +80,3 @@ augroup reload_vimrc
     autocmd!
     autocmd bufwritepost $MYVIMRC nested source $MYVIMRC
 augroup END
-
-au BufRead,BufNewFile *.ts setfiletype typescript
